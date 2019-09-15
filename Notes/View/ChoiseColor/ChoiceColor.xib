@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceColor" customModule="Notes" customModuleProvider="target">
+            <connections>
+                <outletCollection property="buttonColor" destination="wFo-2f-PeJ" collectionClass="NSMutableArray" id="uSH-KQ-Qtp"/>
+                <outletCollection property="buttonColor" destination="sw9-Qf-xhD" collectionClass="NSMutableArray" id="6yg-9O-ab0"/>
+                <outletCollection property="buttonColor" destination="wrP-n9-GFN" collectionClass="NSMutableArray" id="6dE-ZP-cS7"/>
+                <outletCollection property="buttonColor" destination="8Hy-WV-I3I" collectionClass="NSMutableArray" id="hwD-cg-IyW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="802" height="380"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-5j-zpy">
+                    <rect key="frame" x="0.0" y="44" width="802" height="302"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFo-2f-PeJ">
+                            <rect key="frame" x="0.0" y="0.0" width="193" height="193"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wFo-2f-PeJ" secondAttribute="height" multiplier="1:1" id="Rq6-Dy-aVN"/>
+                            </constraints>
+                            <connections>
+                                <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="7bR-bE-fgm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw9-Qf-xhD">
+                            <rect key="frame" x="203" y="0.0" width="193" height="193"/>
+                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sw9-Qf-xhD" secondAttribute="height" multiplier="1:1" id="vGH-Ri-LTx"/>
+                            </constraints>
+                            <connections>
+                                <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="U2g-x2-z8U"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrP-n9-GFN">
+                            <rect key="frame" x="406" y="0.0" width="193" height="193"/>
+                            <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wrP-n9-GFN" secondAttribute="height" multiplier="1:1" id="EVg-wS-NP8"/>
+                            </constraints>
+                            <connections>
+                                <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="1k7-q4-mfb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hy-WV-I3I">
+                            <rect key="frame" x="609" y="0.0" width="193" height="193"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="8Hy-WV-I3I" secondAttribute="height" multiplier="1:1" id="fFR-mD-KO2"/>
+                            </constraints>
+                            <connections>
+                                <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="7vv-C2-7Aw"/>
+                                <outletCollection property="gestureRecognizers" destination="CVC-FL-ekl" appends="YES" id="ycf-rM-KeZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a3E-5j-zpy" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="JU3-YI-P4J"/>
+                <constraint firstItem="a3E-5j-zpy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Xj8-32-itO"/>
+                <constraint firstItem="a3E-5j-zpy" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="dnK-pU-bz6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="a3E-5j-zpy" secondAttribute="bottom" id="iMc-1I-I8E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="423.1884057971015" y="44.866071428571423"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="CVC-FL-ekl">
+            <connections>
+                <action selector="choiceMultiColor:" destination="-1" id="Dlu-fr-wYG"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+</document>
